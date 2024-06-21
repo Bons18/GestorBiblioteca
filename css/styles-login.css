@@ -1,0 +1,71 @@
+/* Archivo: styles-login.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('../img/mine.jpg') no-repeat center center fixed; /* Cambia 'book.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 350px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 20px;
+    text-align: center;
+    color: #333;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con ligera transparencia */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #555; /* Cambiado a un tono más oscuro */
+}
+
+button {
+    padding: 10px;
+    background: #333; /* Fondo más oscuro */
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #555; /* Cambiado a un tono más claro para el hover */
+}

@@ -1,0 +1,112 @@
+/* Reset de estilos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: url('../img/mine.jpg') no-repeat center center fixed; /* Cambia 'book.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    color: #333;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Secciones principales */
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilos del formulario de material */
+#material-form {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    border-radius: 8px;
+}
+
+#material-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333; /* Color más oscuro */
+}
+
+#material-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Color más oscuro */
+}
+
+#material-form input,
+#material-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con ligera transparencia */
+}
+
+#material-form button {
+    background: #333; /* Fondo más oscuro */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#material-form button:hover {
+    background: #555; /* Cambiado a un tono más claro para el hover */
+}
+
+/* Lista de materiales */
+#material-list {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    border-radius: 8px;
+}
+
+#material-list h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333; /* Color más oscuro */
+}
+
+#material-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#material-list ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#material-list ul li:last-child {
+    border-bottom: none;
+}

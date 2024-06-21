@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Biblioteca - Sistema de Gestión de Biblioteca</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Enlace al script de SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Enlace al script de JavaScript principal -->
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestión de Biblioteca</h1>
+    </header>
+    <main>
+        <section id="material-form">
+            <h2>Agregar Material</h2>
+            <form id="addMaterialForm">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" required>
+                
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor" required>
+                
+                <label for="año">Año de Publicación:</label>
+                <input type="number" id="año" required>
+                
+                <label for="tipo">Tipo:</label>
+                <select id="tipo">
+                    <option value="libro">Libro</option>
+                    <option value="revista">Revista</option>
+                    <option value="periodico">Periódico</option>
+                </select>
+                
+                <div id="extraFields">
+                    <!-- Campos adicionales para cada tipo de material se generarán dinámicamente aquí -->
+                </div>
+                
+                <button type="submit">Agregar Material</button>
+            </form>
+        </section>
+        <section id="material-list">
+            <h2>Inventario de Materiales</h2>
+            <ul id="materiales"></ul>
+        </section>
+    </main>
+</body>
+</html>

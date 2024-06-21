@@ -1,0 +1,19 @@
+### Herencia
+La herencia en este código se implementa de la siguiente manera:
+- Se define una clase base abstracta `Material` que contiene propiedades comunes como `#titulo`, `#autor`, `#añoPublicacion`, y métodos como `mostrarInformacion`, y getters para estas propiedades.
+- Las clases `Libro`, `Revista` y `Periodico` extienden (`extends`) la clase `Material`. Esto significa que heredan todas las propiedades y métodos definidos en `Material`.
+
+### Polimorfismo
+- El polimorfismo se observa en las implementaciones del método `mostrarInformacion` en las clases `Libro`, `Revista`, y `Periodico`.
+- Aunque `mostrarInformacion` es declarado como un método abstracto en `Material` (sin implementación real), cada subclase proporciona su propia implementación específica de este método.
+- Por ejemplo, `Libro` muestra información con detalles adicionales como `ISBN` y `Género`, mientras que `Revista` incluye `ISSN`, `Volumen`, y `Número`.
+
+### Abstracción
+- La abstracción se logra mediante el uso de una clase abstracta `Material`.
+- Esta clase define un método `mostrarInformacion` como abstracto, lo que significa que no tiene una implementación directa en `Material` pero debe ser implementado por cualquier subclase que extienda `Material`.
+- Esto asegura que cada tipo de material (`Libro`, `Revista`, `Periodico`) tenga su propio método `mostrarInformacion` con detalles específicos, manteniendo una interfaz común (`Material`) para acceder a estos datos.
+
+### Encapsulamiento
+- El encapsulamiento se aplica usando campos privados (`#titulo`, `#autor`, `#añoPublicacion`, `#isbn`, `#genero`, `#issn`, `#volumen`, `#numero`, `#fechaPublicacion`) en las clases `Material`, `Libro`, `Revista`, y `Periodico`.
+- Estos campos son accesibles solo a través de métodos getters (`titulo`, `autor`, `añoPublicacion`, etc.), lo que controla cómo se accede y se modifica la información de cada material.
+- Este enfoque ayuda a mantener la integridad de los datos y a prevenir modificaciones no autorizadas desde fuera de la clase.
